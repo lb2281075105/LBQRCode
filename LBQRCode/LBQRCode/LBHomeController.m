@@ -9,6 +9,7 @@
 #import "LBHomeController.h"
 #import <Masonry.h>
 #import "LBQRCodeScanController.h"
+#import "LBCreateQRCodeController.h"
 @interface LBHomeController ()
 
 @end
@@ -64,6 +65,8 @@
 #pragma 生成二维码
 - (void)qrBtnClick{
     
+    [self.navigationController pushViewController:[[LBCreateQRCodeController alloc]init] animated:YES];
+
 }
 
 @end

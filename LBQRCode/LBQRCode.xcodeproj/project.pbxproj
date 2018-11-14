@@ -19,10 +19,12 @@
 		3AE07257219BCF49009374B2 /* tip.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE07252219BCF49009374B2 /* tip.png */; };
 		3AE07258219BCF49009374B2 /* tip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE07253219BCF49009374B2 /* tip@2x.png */; };
 		3AE0725B219BD1AE009374B2 /* LBHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0725A219BD1AE009374B2 /* LBHomeController.m */; };
-		3AE0725E219BEAAD009374B2 /* LBQRCodeScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0725D219BEAAD009374B2 /* LBQRCodeScanController.m */; };
 		3AE07264219BEFF8009374B2 /* LBQRNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE07263219BEFF8009374B2 /* LBQRNavController.m */; };
 		3AE07267219BF04A009374B2 /* leftback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE07265219BF04A009374B2 /* leftback@2x.png */; };
 		3AE07268219BF04A009374B2 /* leftback@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE07266219BF04A009374B2 /* leftback@3x.png */; };
+		3AE0726C219BF300009374B2 /* CIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0726B219BF300009374B2 /* CIImage+Extension.m */; };
+		3AE07270219BF359009374B2 /* LBQRCodeScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0726E219BF359009374B2 /* LBQRCodeScanController.m */; };
+		3AE07274219BF39E009374B2 /* LBCreateQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE07273219BF39E009374B2 /* LBCreateQRCodeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,13 +44,17 @@
 		3AE07253219BCF49009374B2 /* tip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tip@2x.png"; sourceTree = "<group>"; };
 		3AE07259219BD1AE009374B2 /* LBHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeController.h; sourceTree = "<group>"; };
 		3AE0725A219BD1AE009374B2 /* LBHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBHomeController.m; sourceTree = "<group>"; };
-		3AE0725C219BEAAD009374B2 /* LBQRCodeScanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBQRCodeScanController.h; sourceTree = "<group>"; };
-		3AE0725D219BEAAD009374B2 /* LBQRCodeScanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBQRCodeScanController.m; sourceTree = "<group>"; };
 		3AE0725F219BEB53009374B2 /* LBQRCodeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBQRCodeHeader.h; sourceTree = "<group>"; };
 		3AE07262219BEFF8009374B2 /* LBQRNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBQRNavController.h; sourceTree = "<group>"; };
 		3AE07263219BEFF8009374B2 /* LBQRNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBQRNavController.m; sourceTree = "<group>"; };
 		3AE07265219BF04A009374B2 /* leftback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftback@2x.png"; sourceTree = "<group>"; };
 		3AE07266219BF04A009374B2 /* leftback@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftback@3x.png"; sourceTree = "<group>"; };
+		3AE0726A219BF300009374B2 /* CIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CIImage+Extension.h"; sourceTree = "<group>"; };
+		3AE0726B219BF300009374B2 /* CIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CIImage+Extension.m"; sourceTree = "<group>"; };
+		3AE0726E219BF359009374B2 /* LBQRCodeScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBQRCodeScanController.m; sourceTree = "<group>"; };
+		3AE0726F219BF359009374B2 /* LBQRCodeScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBQRCodeScanController.h; sourceTree = "<group>"; };
+		3AE07272219BF39E009374B2 /* LBCreateQRCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBCreateQRCodeController.h; sourceTree = "<group>"; };
+		3AE07273219BF39E009374B2 /* LBCreateQRCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBCreateQRCodeController.m; sourceTree = "<group>"; };
 		49DFF0C356DD62468785490D /* libPods-LBQRCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBQRCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9E05D03A3BF3EDC7FEE132 /* Pods-LBQRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBQRCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBQRCode/Pods-LBQRCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,9 +119,9 @@
 		3AE0724D219BCDB4009374B2 /* LBQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				3AE07271219BF36E009374B2 /* 生成二维码 */,
+				3AE0726D219BF359009374B2 /* 扫描二维码:条形码 */,
 				3AE0724E219BCF49009374B2 /* imagess */,
-				3AE0725C219BEAAD009374B2 /* LBQRCodeScanController.h */,
-				3AE0725D219BEAAD009374B2 /* LBQRCodeScanController.m */,
 				3AE0725F219BEB53009374B2 /* LBQRCodeHeader.h */,
 			);
 			path = LBQRCode;
@@ -133,6 +139,26 @@
 				3AE07253219BCF49009374B2 /* tip@2x.png */,
 			);
 			path = imagess;
+			sourceTree = "<group>";
+		};
+		3AE0726D219BF359009374B2 /* 扫描二维码:条形码 */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0726F219BF359009374B2 /* LBQRCodeScanController.h */,
+				3AE0726E219BF359009374B2 /* LBQRCodeScanController.m */,
+			);
+			path = "扫描二维码:条形码";
+			sourceTree = "<group>";
+		};
+		3AE07271219BF36E009374B2 /* 生成二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0726A219BF300009374B2 /* CIImage+Extension.h */,
+				3AE0726B219BF300009374B2 /* CIImage+Extension.m */,
+				3AE07272219BF39E009374B2 /* LBCreateQRCodeController.h */,
+				3AE07273219BF39E009374B2 /* LBCreateQRCodeController.m */,
+			);
+			path = "生成二维码";
 			sourceTree = "<group>";
 		};
 		8886580F77079FA11A7455D1 /* Pods */ = {
@@ -243,11 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AE0725E219BEAAD009374B2 /* LBQRCodeScanController.m in Sources */,
 				3AE07264219BEFF8009374B2 /* LBQRNavController.m in Sources */,
 				3AE07247219BCD80009374B2 /* main.m in Sources */,
 				3AE0725B219BD1AE009374B2 /* LBHomeController.m in Sources */,
 				3AE07239219BCD7E009374B2 /* AppDelegate.m in Sources */,
+				3AE07274219BF39E009374B2 /* LBCreateQRCodeController.m in Sources */,
+				3AE0726C219BF300009374B2 /* CIImage+Extension.m in Sources */,
+				3AE07270219BF359009374B2 /* LBQRCodeScanController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -139,7 +139,7 @@
 - (void)addImageView{
     
     UILabel * lable = [[UILabel alloc] initWithFrame:CGRectMake(0, (LBHeight-LBSWidth) / 2 - 55, LBWidth, 40)];
-    [lable setText:@"将二维码放入框内，自动识别"];
+    [lable setText:@"将二维码/条形码放入框内，自动识别"];
     lable.textAlignment = NSTextAlignmentCenter;
     lable.textColor = [UIColor whiteColor];
     lable.font = [UIFont systemFontOfSize:15];
