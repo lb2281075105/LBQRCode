@@ -107,11 +107,15 @@ self.codeImage.image = [outImage createNonInterpolatedWithSize:150];
 ##### 1. 保存到本地相册
 ```
 UIGraphicsBeginImageContext(self.view.bounds.size);
+
 [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+
 // 获取图片
 UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+
 // 关闭上下文
 UIGraphicsEndImageContext();
+
 completion(image);
 
 /**
