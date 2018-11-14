@@ -19,6 +19,10 @@
 		3AE07257219BCF49009374B2 /* tip.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE07252219BCF49009374B2 /* tip.png */; };
 		3AE07258219BCF49009374B2 /* tip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE07253219BCF49009374B2 /* tip@2x.png */; };
 		3AE0725B219BD1AE009374B2 /* LBHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0725A219BD1AE009374B2 /* LBHomeController.m */; };
+		3AE0725E219BEAAD009374B2 /* LBQRCodeScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0725D219BEAAD009374B2 /* LBQRCodeScanController.m */; };
+		3AE07264219BEFF8009374B2 /* LBQRNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE07263219BEFF8009374B2 /* LBQRNavController.m */; };
+		3AE07267219BF04A009374B2 /* leftback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE07265219BF04A009374B2 /* leftback@2x.png */; };
+		3AE07268219BF04A009374B2 /* leftback@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE07266219BF04A009374B2 /* leftback@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,13 @@
 		3AE07253219BCF49009374B2 /* tip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tip@2x.png"; sourceTree = "<group>"; };
 		3AE07259219BD1AE009374B2 /* LBHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBHomeController.h; sourceTree = "<group>"; };
 		3AE0725A219BD1AE009374B2 /* LBHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBHomeController.m; sourceTree = "<group>"; };
+		3AE0725C219BEAAD009374B2 /* LBQRCodeScanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBQRCodeScanController.h; sourceTree = "<group>"; };
+		3AE0725D219BEAAD009374B2 /* LBQRCodeScanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBQRCodeScanController.m; sourceTree = "<group>"; };
+		3AE0725F219BEB53009374B2 /* LBQRCodeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBQRCodeHeader.h; sourceTree = "<group>"; };
+		3AE07262219BEFF8009374B2 /* LBQRNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBQRNavController.h; sourceTree = "<group>"; };
+		3AE07263219BEFF8009374B2 /* LBQRNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBQRNavController.m; sourceTree = "<group>"; };
+		3AE07265219BF04A009374B2 /* leftback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftback@2x.png"; sourceTree = "<group>"; };
+		3AE07266219BF04A009374B2 /* leftback@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftback@3x.png"; sourceTree = "<group>"; };
 		49DFF0C356DD62468785490D /* libPods-LBQRCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBQRCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9E05D03A3BF3EDC7FEE132 /* Pods-LBQRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBQRCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBQRCode/Pods-LBQRCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +97,8 @@
 				3AE0724D219BCDB4009374B2 /* LBQRCode */,
 				3AE07237219BCD7E009374B2 /* AppDelegate.h */,
 				3AE07238219BCD7E009374B2 /* AppDelegate.m */,
+				3AE07262219BEFF8009374B2 /* LBQRNavController.h */,
+				3AE07263219BEFF8009374B2 /* LBQRNavController.m */,
 				3AE07259219BD1AE009374B2 /* LBHomeController.h */,
 				3AE0725A219BD1AE009374B2 /* LBHomeController.m */,
 				3AE0723D219BCD7E009374B2 /* Main.storyboard */,
@@ -101,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				3AE0724E219BCF49009374B2 /* imagess */,
+				3AE0725C219BEAAD009374B2 /* LBQRCodeScanController.h */,
+				3AE0725D219BEAAD009374B2 /* LBQRCodeScanController.m */,
+				3AE0725F219BEB53009374B2 /* LBQRCodeHeader.h */,
 			);
 			path = LBQRCode;
 			sourceTree = "<group>";
@@ -108,6 +124,8 @@
 		3AE0724E219BCF49009374B2 /* imagess */ = {
 			isa = PBXGroup;
 			children = (
+				3AE07265219BF04A009374B2 /* leftback@2x.png */,
+				3AE07266219BF04A009374B2 /* leftback@3x.png */,
 				3AE0724F219BCF49009374B2 /* scanscanBg.png */,
 				3AE07250219BCF49009374B2 /* scanLine@3x.png */,
 				3AE07251219BCF49009374B2 /* scanLine@2x.png */,
@@ -184,8 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE07267219BF04A009374B2 /* leftback@2x.png in Resources */,
 				3AE07254219BCF49009374B2 /* scanscanBg.png in Resources */,
 				3AE07255219BCF49009374B2 /* scanLine@3x.png in Resources */,
+				3AE07268219BF04A009374B2 /* leftback@3x.png in Resources */,
 				3AE07244219BCD80009374B2 /* LaunchScreen.storyboard in Resources */,
 				3AE07241219BCD80009374B2 /* Assets.xcassets in Resources */,
 				3AE07258219BCF49009374B2 /* tip@2x.png in Resources */,
@@ -223,6 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE0725E219BEAAD009374B2 /* LBQRCodeScanController.m in Sources */,
+				3AE07264219BEFF8009374B2 /* LBQRNavController.m in Sources */,
 				3AE07247219BCD80009374B2 /* main.m in Sources */,
 				3AE0725B219BD1AE009374B2 /* LBHomeController.m in Sources */,
 				3AE07239219BCD7E009374B2 /* AppDelegate.m in Sources */,

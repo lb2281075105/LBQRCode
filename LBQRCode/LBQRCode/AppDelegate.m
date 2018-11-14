@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LBHomeController.h"
+#import "LBQRNavController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +23,7 @@
     
     LBHomeController *home = [[LBHomeController alloc]init];
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:home];
+    LBQRNavController *nav = [[LBQRNavController alloc]initWithRootViewController:home];
     self.window.rootViewController = nav;
 
     [self.window makeKeyAndVisible];
