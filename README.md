@@ -40,30 +40,28 @@
 ##### 4.拉起本地相册二维码
 ```
 - (void)chooseButtonClick{
-if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-//关闭扫描
-[self stopScan];
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        // 关闭扫描
+        [self stopScan];
 
-//1 弹出系统相册
-UIImagePickerController *pickVC = [[UIImagePickerController alloc]init];
-//2 设置照片来源
-/**
-UIImagePickerControllerSourceTypePhotoLibrary,相册
-UIImagePickerControllerSourceTypeCamera,相机
-UIImagePickerControllerSourceTypeSavedPhotosAlbum,照片库
-*/
+        //1. 弹出系统相册
+        UIImagePickerController *pickVC = [[UIImagePickerController alloc]init];
+        //2. 设置照片来源
+        /**
+        UIImagePickerControllerSourceTypePhotoLibrary,相册
+        UIImagePickerControllerSourceTypeCamera,相机
+        UIImagePickerControllerSourceTypeSavedPhotosAlbum,照片库
+        */
 
-pickVC.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-//3 设置代理
-pickVC.delegate = self;
-//4.转场动画
-self.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
-[self presentViewController:pickVC animated:YES completion:nil];
-}
-else
-{
-[self showAlertViewWithTitle:@"打开失败" withMessage:@"相册打开失败。设备不支持访问相册，请在设置->隐私->照片中进行设置！"];
-}
+        pickVC.sourceType =   UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        //3. 设置代理
+        pickVC.delegate = self;
+        //4.转场动画
+        self.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:pickVC animated:YES completion:nil];
+    }else{
+        [self showAlertViewWithTitle:@"打开失败" withMessage:@"相册打开失败。设备不支持访问相册，请在设置->隐私->照片中进行设置！"];
+    }
 
 }
 
@@ -86,11 +84,11 @@ CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
 /**
 *  3.设置数据(通过滤镜对象的KVC)
 */
-//存放的信息
+// 存放的信息
 NSString *info = @"hahahahhahahaha";
-//把信息转化为NSData
+// 把信息转化为NSData
 NSData *infoData = [info dataUsingEncoding:NSUTF8StringEncoding];
-//滤镜对象kvc存值
+// 滤镜对象kvc存值
 [filter setValue:infoData forKeyPath:@"inputMessage"];
 
 /**
@@ -98,7 +96,7 @@ NSData *infoData = [info dataUsingEncoding:NSUTF8StringEncoding];
 */
 CIImage *outImage = [filter outputImage];
 
-//imageView.image = [UIImage imageWithCIImage:outImage];//不处理图片模糊,故而调用下面的信息
+// imageView.image = [UIImage imageWithCIImage:outImage];//不处理图片模糊,故而调用下面的信息
 
 self.codeImage.image = [outImage createNonInterpolatedWithSize:150];
 
@@ -119,7 +117,7 @@ completion(image);
 /**
 *  将图片保存到本地相册
 */
-UIImageWriteToSavedPhotosAlbum(image, self , @selector(saveImage:didFinishSavingWithError:contextInfo:), nil);//保存图片到照片库
+UIImageWriteToSavedPhotosAlbum(image, self , @selector(saveImage:didFinishSavingWithError:contextInfo:), nil);
 ```
 
 
