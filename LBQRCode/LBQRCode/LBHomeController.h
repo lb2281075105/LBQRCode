@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LBHomeController.h
 //  LBQRCode
 //
 //  Created by liubo on 2018/11/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LBHomeController : UIViewController
 
 @end
-
